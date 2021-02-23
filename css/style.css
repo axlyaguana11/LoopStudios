@@ -1,0 +1,66 @@
+:root {
+    --white: #ffffff;
+    --black: #0d0d0d;
+    --dark-gray: #8c8c8c;
+    --very-dark-gay: #696969;
+}
+
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+
+html {
+    font-size: 62.5%;
+    font-family: 'Josefin Sans', sans-serif;
+}
+
+
+/*Styling button and menu and header */
+
+.header {
+    width: 100vw;
+    height: 80px;
+    background-color: pink;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+}
+
+.header .header-logo {
+    width: 160px;
+    height: 40px;
+    background-image: url('https://svgshare.com/i/UMF.svg');
+    background-size: contain;
+    background-position: center;
+    background-repeat: no-repeat;
+}
+
+.header .header-logo a{
+    display: inline-block;
+    height: 100%;
+    width: 100%;
+
+}
+
+.header .header-hamburger {
+    width: 30px;
+    height: 30px;
+}
+
+.ham {
+    width: 100%;
+    height: 100%;
+    border: none;
+    background-color: transparent;
+    background-image: url('https://svgshare.com/i/UNt.svg');
+    background-size: contain;
+    background-position: center;
+    background-repeat: no-repeat;
+}
+
+.header-nav {
+    display: none;
+}
+
