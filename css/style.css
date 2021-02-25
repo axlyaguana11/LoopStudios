@@ -28,6 +28,7 @@ html {
     background-size: cover;
     background-position: center;
     background-repeat: no-repeat;
+    position: relative;
 }
 
 .header-main {
@@ -59,6 +60,9 @@ html {
     height: 30px;
 }
 
+/* */
+/* */
+
 .ham {
     width: 100%;
     height: 100%;
@@ -68,12 +72,33 @@ html {
     background-size: contain;
     background-position: center;
     background-repeat: no-repeat;
+    cursor: pointer;
+    z-index: 10;
+}
+
+.showClose {
+    background-image: url('https://ljc-dev.github.io/testing0/ham-close.svg');
 }
 
 .header-nav {
-    display: none;
+    /* display: none; */
+    width: 100vw;
+    height: 100vh;
+    background-color: var(--black);
+    overflow: hidden;
+    position: absolute;
+    top: 0;
+    left: 0;
+    transform: translateY(-100%);
+    transition: transform 0.5s ease;
 }
 
+.showHeaderNav {
+    transform: translateY(0);
+}
+
+/* */
+/* */
 
 .header-section-1 {
     width: 100%;
@@ -252,7 +277,7 @@ html {
 
 .footer {
     width: 100vw;
-    height: 70vh;
+    height: 80vh;
     background-color: var(--black);
     display: flex;
     flex-direction: column;
@@ -301,7 +326,7 @@ html {
 
 .footer-icons {
     width: 100%;
-    height: 40px;
+    height: 30px;
 }
 
 .footer-icons-list {
@@ -311,5 +336,41 @@ html {
     display: flex;
     justify-content: space-around;
     align-items: center;
+    list-style: none;
 }
 
+.footer-icons-item {
+    width: 30px;
+    height: 30px;
+}
+
+.footer-icons-item a {
+    display: inline-block;
+    width: 100%;
+    height: 100%;
+}
+
+.footer--a-1,
+.footer--a-2, 
+.footer--a-3,
+.footer--a-4 {
+    background-size: contain;
+    background-repeat: no-repeat;
+    background-position: center;
+}
+
+.footer--a-1 {
+    background-image: url('https://rayanebengaoui.github.io/FM_challenge15_Loopstudios_landing_page/images/icon-facebook.svg');
+}
+
+.footer--a-2 {
+    background-image: url('https://rayanebengaoui.github.io/FM_challenge15_Loopstudios_landing_page/images/icon-twitter.svg');
+}
+
+.footer--a-3 {
+    background-image: url('https://rayanebengaoui.github.io/FM_challenge15_Loopstudios_landing_page/images/icon-pinterest.svg');
+}
+
+.footer--a-4 {
+    background-image: url('https://rayanebengaoui.github.io/FM_challenge15_Loopstudios_landing_page/images/icon-instagram.svg');
+}
