@@ -37,6 +37,7 @@ html {
     display: flex;
     justify-content: space-around;
     align-items: center;
+    display: relative;
 }
 
 .header .header-logo {
@@ -46,18 +47,20 @@ html {
     background-size: contain;
     background-position: center;
     background-repeat: no-repeat;
+    display: absolute;
+    z-index: 1000;
 }
 
 .header .header-logo a{
     display: inline-block;
     height: 100%;
     width: 100%;
-
 }
 
 .header .header-hamburger {
     width: 30px;
     height: 30px;
+    position: relative;
 }
 
 /* */
@@ -73,7 +76,8 @@ html {
     background-position: center;
     background-repeat: no-repeat;
     cursor: pointer;
-    z-index: 10;
+    position: absolute;
+    z-index: 1000;
 }
 
 .showClose {
@@ -81,7 +85,6 @@ html {
 }
 
 .header-nav {
-    /* display: none; */
     width: 100vw;
     height: 100vh;
     background-color: var(--black);
@@ -91,6 +94,29 @@ html {
     left: 0;
     transform: translateY(-100%);
     transition: transform 0.5s ease;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.header-nav-list-container {
+    width: 80%;
+    height: 50%;
+    list-style: none;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-evenly;
+    align-items: flex-start;
+}
+
+.header-nav-list-item .header-nav-a {
+    text-decoration: none;
+    color: var(--white);
+    font-size: 2.4rem;
+}
+
+.header-nav-a:hover {
+    text-decoration: underline solid var(--white);
 }
 
 .showHeaderNav {

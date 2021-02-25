@@ -8,9 +8,9 @@ let ham = document.querySelector(".ham")
 
 ham.addEventListener("click", toggleHamburger) */
 
-if (ham) {
+ if (ham) {
     ham.addEventListener("click", () => {
         nav.classList.toggle("showHeaderNav")
         ham.classList.toggle("showClose")
-    })
-}
+     })
+ }
