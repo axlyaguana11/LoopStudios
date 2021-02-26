@@ -97,6 +97,7 @@ html {
     display: flex;
     justify-content: center;
     align-items: center;
+    z-index: 100;
 }
 
 .header-nav-list-container {
@@ -297,6 +298,15 @@ html {
     color: var(--black);
     font-weight: bold;
     font-size: 1.5rem;
+    cursor: pointer;
+}
+
+.main-section-2-button-container:hover {
+    background-color: var(--black);
+}
+
+.main-section-2--button:hover {
+    color: var(--white);
 }
 
 /* Footer */
@@ -348,6 +358,10 @@ html {
 .footer-nav-list-item  a {
     color: var(--white);
     text-decoration: none;
+}
+
+.footer-nav-list-item a:hover {
+    text-decoration: underline;
 }
 
 .footer-icons {

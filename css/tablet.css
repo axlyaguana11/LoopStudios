@@ -1,0 +1,40 @@
+.header {
+    height: 40vh;
+}
+
+.header-section-1 {
+    height: 330px;
+}
+
+.header-section-1-container {
+    width: 70%;
+    height: 50%;
+}
+
+.main-section-1 {
+    position: relative;
+    height: auto;
+}
+
+.main-section-1-figure {
+    width: 60%;
+/*     margin-left: 10%; */
+}
+
+.main-section-1-text {
+    width: 60%;
+    right: 50%;
+}
+
+.main-section-container-grid {
+    grid-template-rows: repeat(2, 250px);
+    grid-template-columns: repeat(4, 1fr);
+}
+
+.footer {
+    height: 60vh;
+}
+
+.footer-icons-list {
+    width: 40%;
+}

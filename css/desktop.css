@@ -1,0 +1,47 @@
+.header {
+    height: 100vh;
+}
+
+.header-section-1 {
+    height: 540px;
+}
+
+.header-section-1-container {
+    width: 40%;
+    height: 30%;
+}
+
+.main-section-1 {
+    display: flex;
+}
+
+.main-section-1-figure {
+    width: 50%;
+}
+
+.main-section-1-text {
+    width: 40%;
+    height: 60%;
+    margin: auto auto;
+    text-align: left;
+}
+
+.main-section-container-grid {
+    width: 70%;
+}
+
+.grid-item {
+    transition: all 1s;
+}
+
+.grid-item:hover {
+    transform: scale(1.2);
+}
+
+.footer {
+    height: 100vh;
+}
+
+.footer-icons-list {
+    width: 300px;
+}
